@@ -22,7 +22,17 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              {
+                "input": "./node_modules/primeflex/themes/primeone-dark.css",
+                "bundleName": "theme-dark",
+                "inject": false
+              },
+              {
+                "input": "./node_modules/primeflex/themes/primeone-light.css",
+                "bundleName": "theme-light",
+                "inject": false
+              }
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -79,12 +89,13 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f14fb2c6-7c48-450a-8656-31fd94da7ab0"
   }
 }
